@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./progress-tracker.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Progress Tracker</h1>
+        <div class="info">
+            <div class="date-div">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate">
+            </div>
+            <p id="currentLoggingDate"></p>
+            <p class="level-display">Day: <span id="day">1</span></p>
+            <p class="level-display">Level: <span id="level">1.0</span></p>
+            <p class="day-streak">Streak: <span id="streak">0</span> days</p>
+        </div>
+
+        <div id="progressContainer">
+            <div id="progressCircle">
+                <svg>
+                    <circle cx="50" cy="50" r="45" stroke="#ddd" stroke-width="10" fill="none"></circle>
+                    <circle id="progressBar" cx="50" cy="50" r="45" stroke="#4CAF50" stroke-width="10" fill="none"
+                        stroke-dasharray="282" stroke-dashoffset="282"></circle>
+                </svg>
+                <span id="percentageText">0%</span>
+            </div>
+        </div>
+
+        <div id="controls">
+            <button id="successButton">Success</button>
+            <button id="failureButton">Failed</button>
+            <button id="resetButton">Reset</button>
+        </div>
+
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="close">&times;</span>
+            <p id="modal-message"></p>
+            <button id="modal-confirm">OK</button>
+        </div>
+    </div>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <input type="text" id="resetUsername" placeholder="Username" required value="hatim">
+            <input type="password" id="resetPassword" placeholder="Password" required value="hatim123">
+            <button id="confirmReset">Confirm Reset</button>
+            <button id="cancelReset">Cancel</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
