@@ -217,14 +217,12 @@ document.getElementById('startDate').addEventListener('change', (event) => {
 updateDisplay();
 
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
-            .then((registration) => {
-                console.log('Service Worker registered with scope:', registration.scope);
-            })
-            .catch((error) => {
-                console.error('Service Worker registration failed:', error);
-            });
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/progress-tracker/service-worker.js').then(function (registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
     });
 }
 
