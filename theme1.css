@@ -1,0 +1,42 @@
+/* Updated Color Palette */
+.color-1 {
+    background-color: #bababa;
+    color: #373A40;
+    /* Light Gray */
+}
+
+.color-2 {
+    background-color: #686D76;
+    /* Grayish Blue */
+}
+
+.color-3 {
+    background-color: #373A40;
+    /* Dark Gray */
+}
+
+.color-4 {
+    background-color: #DC5F00;
+    /* Orange */
+}
+
+/* Repeating colors as necessary */
+.color-5 {
+    background-color: #686D76;
+    /* Light Gray */
+}
+
+#progressContainer {
+    background-color: #373A40;
+    /* Light Gray */
+}
+
+#resetButton {
+    background-color: #686D76;
+    /* Keeping original */
+}
+
+#percentageText {
+    color: #fff;
+    /* White text */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Copy Separator</title>
+    <style>
+        .voucher-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        .voucher-divider::before,
+        .voucher-divider::after {
+            content: '';
+            flex: 1;
+            height: 3px;
+            background: #ccc;
+            margin: 0 15px;
+        }
+
+        .voucher-divider span {
+            background-color: #fff;
+            padding: 0 10px;
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 2px;
+            color: #555;
+        }
+
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="date" name="date" id="" value="date" placeholder="date">
+</body>
+
+</html>

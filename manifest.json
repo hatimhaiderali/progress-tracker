@@ -1,0 +1,22 @@
+{
+    "name": "Progresser",
+    "short_name": "Progresser",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "4795155.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "ss-for-manifest.jpg",
+            "sizes": "1920x877",
+            "type": "image/png"
+        }
+    ]
+}
