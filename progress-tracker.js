@@ -5,7 +5,7 @@ let streak = parseInt(localStorage.getItem('streak')) || 0;
 let maxDays = 0;
 
 const correctUsername = "hatim";
-const correctPassword = "01223b834de65599084ab2dcd8db6de28c638a36925bae36844257194422d110";
+const correctPassword = "87806a6421336b6d39091c9c937bc25cc0e66ccd459345469a426bfab1c39b96";
 
 function hashPassword(password) {
     return CryptoJS.SHA256(password).toString();
